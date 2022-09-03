@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "workout-bot"
+version = "0.1.0"
+description = "bot for checking workout progress"
+authors = ["Ivan.Mikhailov"]
+readme = "README.md"
+packages = [{include = "workout_bot"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^1.10.1"
+python-telegram-bot = "^13.13"
+
+
+[tool.poetry.group.dev.dependencies]
+flake8 = "^5.0.4"
+black = "^22.8.0"
+pylint = "^2.15.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
